@@ -4,10 +4,9 @@ $(document).ready(function () {
     var getrandomnumbers = generaterandom(factct);
     loadFact(getrandomnumbers);
 
-    $('#refreshBtn').click(function () {
+    $('#factcount').change(function () {
         $("#factbox").empty();
         factct = $('#factcount').val();
-        //alert(factct);
         if(factct>9)
         {
             factct = 9;
